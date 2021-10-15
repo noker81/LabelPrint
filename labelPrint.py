@@ -50,7 +50,6 @@ while True:                             # The Event Loop
                     os.remove(f)
 
                 for x in range(startNum, cycleNum):
-                    #os.startfile(123123, "print")
                     
                     w = int(int(values[2]) * mm_to_px)
                     h = int(int(values[3]) * mm_to_px)
@@ -83,12 +82,9 @@ while True:                             # The Event Loop
                         hn = 0
 
                     if wn < 0: wn = 0
-                    #if hn < 0: hn = 0
                     idraw.text((wn, hn), text, font=font, fill=(0,0,0,255))
 
-                    #idraw.rectangle((10, 10, 100, 100), fill='blue')
                     img.save(imagespath + '/d-' + str(x) + '.png', dpi=(300, 300))
-                    #os.startfile('images/rectangle.png', "print")
         else:
             sg.cprint('Введите числа для печати этикеток')
         
