@@ -16,7 +16,7 @@ layout = [
     [sg.Submit('Печать'), sg.Cancel()]
 ]
 window = sg.Window('Печать этикеток', layout)
-while True:                             # The Event Loop
+while True:
     event, values = window.read()
     # print(event, values) #debug
     if event in (None, 'Exit', 'Cancel'):
